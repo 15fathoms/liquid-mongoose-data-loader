@@ -20,7 +20,7 @@ const dotenv = require('dotenv').config();
 const path = require('path');
 
 // Load liquid-mongo-data-loader
-const liquidMongoDataLoader = require('liquid-mongo-data-loader');
+const dataLoader = require('liquid-mongoose-data-loader');
 
 //Routes
 const renderPage = require('./routes/renderPage');
@@ -75,7 +75,7 @@ Loads models and custom Liquid tags.
 ## Example
 
 ```javascript
-jsliquidMongoDataLoader(engine, {
+dataLoader(engine, {
   modelsPath: './models'
 });
 ```
