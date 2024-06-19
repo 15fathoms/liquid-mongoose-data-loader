@@ -50,7 +50,7 @@ const engine = new Liquid({
 });
 
 // Load models and custom Liquid tags
-liquidMongoDataLoader(engine, {
+DataLoader(engine, {
   modelsPath: './models'
 });
 

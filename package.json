@@ -1,8 +1,9 @@
 {
     "name": "liquid-mongoose-data-loader",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "description": "A Liquid extension for dynamically loading data from MongoDB models",
     "main": "index.js",
+    "types": "index.d.ts",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
