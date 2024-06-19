@@ -5,7 +5,7 @@ A NPM package to dynamically load MongoDB data into Liquid templates.
 ## Installation
 
 ```bash
-npm install liquid-mongo-data-loader
+npm install liquid-mongoose-data-loader
 ```
 
 ## Usage
