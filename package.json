@@ -1,0 +1,26 @@
+{
+    "name": "liquid-mongoose-data-loader",
+    "version": "1.0.2",
+    "description": "A Liquid extension for dynamically loading data from MongoDB models",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "liquid",
+      "mongoose",
+      "data",
+      "loader",
+      "dynamic",
+      "mongodb",
+      "express",
+      "templating"
+    ],
+    "author": "Emmanuel Cartelli",
+    "license": "MIT",
+    "dependencies": {
+      "liquidjs": "^10.14.0",
+      "mongoose": "^8.4.3"
+    }
+  }
+  
