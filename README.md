@@ -1,4 +1,4 @@
-# Liquid Mongo Data Loader
+# Liquid Mongoose Data Loader
 
 A NPM package to dynamically load MongoDB data into Liquid templates.
 
