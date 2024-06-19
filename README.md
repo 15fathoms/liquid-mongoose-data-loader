@@ -43,7 +43,6 @@ mongoose.connect(process.env.MONGO_URL, {
 });
 
 // Load Liquid engine
-// Load Liquid engine
 const engine = new Liquid({
     root: './views',
     extname: '.liquid',
@@ -53,19 +52,6 @@ const engine = new Liquid({
 // Load models and custom Liquid tags
 liquidMongoDataLoader(engine, {
   modelsPath: './models'
-});
-
-// Load Liquid engine
-
-const engine = new Liquid({
-    root: './views',
-    extname: '.liquid',
-    dynamicPartials: true,
-});
-
-// Load custom Liquid tags
-liquidDataLoader(engine, {
-    modelsPath: path.join(__dirname, 'models')
 });
 
 app.engine('liquid', engine.express()); // register liquid engine
