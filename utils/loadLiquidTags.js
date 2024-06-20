@@ -38,12 +38,9 @@ class IncludeTag extends Tag {
             if (findOne && item) {
                 const query = {};
                 query[findOne] = item;
-                console.log(query);
                 data = yield Model.find(query).lean(); // Utiliser findOne avec lean pour obtenir un objet JavaScript simple
-                console.log(data);
             } else {
                 data = yield Model.find().lean(); // Utiliser find avec lean pour obtenir tous les résultats
-                console.log(data);
             }
             ctx.environments[storageKey] = data
         } catch (error) {

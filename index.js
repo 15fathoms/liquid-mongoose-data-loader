@@ -5,10 +5,7 @@ function dataLoader(engine, options) {
   if (!options.modelsPath) {
     throw new Error('modelsPath option is required');
   }
-
   const models = loadModels(options.modelsPath);
-  console.log('Loaded models:', models);
-
   loadLiquidTags(engine, models);
 }
 

@@ -79,11 +79,9 @@ dataLoader(engine, {
   modelsPath: './models'
 });
 ```
-## Model Naming
-The module expects the model names to be in lowercase when referenced in the templates. For example, if you have a model named Book, you should reference it as book in your Liquid template.
 
 ### Example
-Assuming you have a `Book` model defined in models/Book.js
+Assuming you have a `Book` model defined in models/books.js
 
 ```javascript
 const mongoose = require('mongoose');
@@ -100,10 +98,8 @@ module.exports = mongoose.model('Book', bookSchema);
 In your Liquid template, you would reference this model as book:
 
 ```liquid
-{% load model: 'book', key: 'all_books' %}
+{% load model: 'books', key: 'all_books' %}
 ```
-This is because the module converts model names to lowercase to match Mongoose's default behavior of naming collections in lowercase.
-
 ## Tag Parameters
 
 Examples :
@@ -114,7 +110,7 @@ Examples :
 ```
 
 ### `model`
-Specifies the name of the Mongoose model to use. The module converts the model name to lowercase to match Mongoose's default behavior. For example, if you have a model named `Book`, you should reference it as `book` in your Liquid template.
+`model` parameter specifies the javascript file name without the extension.
 
 ### `item`
 Specifies the value to search for in the model. The module uses this value to search for a specific item in the model.
